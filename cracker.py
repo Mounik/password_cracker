@@ -13,8 +13,8 @@ class Cracker:
     def crack_dict(md5, file, order, done_queue):
         """
         Casse un HASH MD5 (md5) via une liste de mots-clés (file)
-        :param done_queue:
-        :param order:
+        :param done_queue: Queue process
+        :param order: Odre de lecture du fichier List
         :param md5: Hash MD5 à casser
         :param file: Fichier de mots-clés à utiliser
         :return:
@@ -102,8 +102,8 @@ class Cracker:
     @staticmethod
     def crack_smart(md5, pattern, _index=0):
         """
-        :param md5:
-        :param pattern:
+        :param md5: Hash du password en md5
+        :param pattern: définition du pattern du Mot de passe
         :param _index:
         :return:
         """
